@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8eee7"><meta name="description" content="یک پیام گل‌گلی برای روز دختر">
+  <title>قشنگ‌ترین گل دنیا 🌸</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app" aria-live="polite">
+    <div class="petal-field" aria-hidden="true"><i>✿</i><i>❀</i><i>✿</i><i>❀</i><i>✿</i></div>
+    <section class="scene intro active" data-scene="intro">
+      <div class="sprig sprig-top" aria-hidden="true">✿　❀　✿</div>
+      <div class="intro-content"><h1>یه سؤال مهم؟</h1><div class="ornament">— ❀ —</div><p class="lead">به نظرت قشنگ‌ترین گل<br>کدومه؟</p><button class="primary" data-go="selection">یکی رو انتخاب کن <span>←</span></button></div>
+      <div class="sprig sprig-bottom" aria-hidden="true">❀　✿　❀</div>
+    </section>
+    <section class="scene selection" data-scene="selection">
+      <header><h2>یکی از این گل‌ها رو انتخاب کن</h2><div class="ornament">— ❀ —</div></header>
+      <div class="flower-grid">
+        <button class="flower-card" data-flower="rose"><img src="images/rose.jpg" alt="گل رز"><span>رز</span></button>
+        <button class="flower-card" data-flower="lily"><img src="images/lily.jpg" alt="گل لیلیوم"><span>لیلیوم</span></button>
+        <button class="flower-card" data-flower="lotus"><img src="images/lotus.jpg" alt="نیلوفر آبی"><span>نیلوفر آبی</span></button>
+        <button class="flower-card" data-flower="tulip"><img src="images/tulip.jpg" alt="گل لاله"><span>لاله</span></button>
+        <button class="flower-card" data-flower="sunflower"><img src="images/sunflower.jpg" alt="آفتابگردان"><span>آفتابگردان</span></button>
+        <button class="flower-card" data-flower="cherry"><img src="images/cherry-blossom.jpg" alt="شکوفه گیلاس"><span>شکوفه گیلاس</span></button>
+      </div>
+      <button class="back-link" data-go="intro">→ برگشت</button>
+    </section>
+    <section class="scene flower-scene scene-rose" data-scene="flower-rose">
+      <div class="hero-photo"><img src="images/rose.jpg" alt="گل رز"></div>
+      <div class="message-card"><p class="wrong-answer">جوابت غلطه!</p><p class="flower-line">رز هم قشنگه‌ها</p><p class="ellipsis">اما...</p><div class="ornament">— ❀ —</div><button class="primary compact" data-go="final">خب، بعدش؟ <span>←</span></button></div>
+    </section>
+    <section class="scene flower-scene scene-lily" data-scene="flower-lily">
+      <div class="hero-photo"><img src="images/lily.jpg" alt="گل لیلیوم"></div>
+      <div class="message-card"><p class="wrong-answer">جوابت غلطه!</p><p class="flower-line">لیلیوم هم قشنگه‌ها</p><p class="ellipsis">اما...</p><div class="ornament">— ❀ —</div><button class="primary compact" data-go="final">خب، بعدش؟ <span>←</span></button></div>
+    </section>
+    <section class="scene flower-scene scene-lotus" data-scene="flower-lotus">
+      <div class="hero-photo"><img src="images/lotus.jpg" alt="گل نیلوفر آبی"></div>
+      <div class="message-card"><p class="wrong-answer">جوابت غلطه!</p><p class="flower-line">نیلوفر آبی هم قشنگه‌ها</p><p class="ellipsis">اما...</p><div class="ornament">— ❀ —</div><button class="primary compact" data-go="final">خب، بعدش؟ <span>←</span></button></div>
+    </section>
+    <section class="scene flower-scene scene-tulip" data-scene="flower-tulip">
+      <div class="hero-photo"><img src="images/tulip.jpg" alt="گل لاله"></div>
+      <div class="message-card"><p class="wrong-answer">جوابت غلطه!</p><p class="flower-line">لاله هم قشنگه‌ها</p><p class="ellipsis">اما...</p><div class="ornament">— ❀ —</div><button class="primary compact" data-go="final">خب، بعدش؟ <span>←</span></button></div>
+    </section>
+    <section class="scene flower-scene scene-sunflower" data-scene="flower-sunflower">
+      <div class="hero-photo"><img src="images/sunflower.jpg" alt="گل آفتابگردان"></div>
+      <div class="message-card"><p class="wrong-answer">جوابت غلطه!</p><p class="flower-line">آفتابگردان هم قشنگه‌ها</p><p class="ellipsis">اما...</p><div class="ornament">— ❀ —</div><button class="primary compact" data-go="final">خب، بعدش؟ <span>←</span></button></div>
+    </section>
+    <section class="scene flower-scene scene-cherry" data-scene="flower-cherry">
+      <div class="hero-photo"><img src="images/cherry-blossom.jpg" alt="گل شکوفه گیلاس"></div>
+      <div class="message-card"><p class="wrong-answer">جوابت غلطه!</p><p class="flower-line">شکوفه گیلاس هم قشنگه‌ها</p><p class="ellipsis">اما...</p><div class="ornament">— ❀ —</div><button class="primary compact" data-go="final">خب، بعدش؟ <span>←</span></button></div>
+    </section>
+    <section class="scene final-scene" data-scene="final">
+      <div class="final-decor" aria-hidden="true"></div><p class="eyebrow final-wrong">جوابت غلطه!</p><p class="small-line" id="final-flower">رز هم قشنگه‌ها...</p><div class="ornament">— ❀ —</div><h2>قشنگ‌ترین گل دنیا<br><em>تویی</em></h2><p class="final-greeting">روزت مبارک،<br>قشنگ‌ترین گل دنیا!</p><div class="heart">♡</div><button class="restart" data-go="intro">از اول ببینیم؟ ↻</button>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body></html>
