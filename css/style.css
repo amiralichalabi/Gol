@@ -1,42 +1,187 @@
-@charset "UTF-8";
-:root{--paper:#fbf1e8;--ink:#382724;--rose:#c57c75;--rose-dark:#ad625f;--line:#c7a99b;--card:rgba(255,239,229,.91)}
-*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:"B Nazanin","Noto Naskh Arabic","Tahoma",serif;color:var(--ink)}body{min-height:100svh;background:#f7e8de;display:grid;place-items:center}.app{position:relative;width:min(100%,430px);height:min(900px,100svh);min-height:620px;overflow:hidden;background:var(--paper);box-shadow:0 15px 55px #6d3c3020;isolation:isolate}.scene{position:absolute;inset:0;display:none;overflow:hidden;background:linear-gradient(150deg,#fff8f0 0%,#f6e6dc 100%);animation:scene-in .65s ease both}.scene.active{display:flex}.intro{align-items:center;justify-content:center;text-align:center;background:radial-gradient(ellipse at 55% 40%,#fffaf5 0%,#f9eee5 65%,#f1dfd1 100%)}.intro:before,.intro:after{content:"";position:absolute;width:200px;height:200px;border-radius:50%;background-image:url('../images/cherry-blossom.jpg');background-size:cover;opacity:.25;filter:blur(1px);mask-image:radial-gradient(circle,black,transparent 68%)}.intro:before{top:-85px;right:-70px}.intro:after{bottom:-90px;left:-80px}.intro-content{z-index:1;padding:25px 24px;width:100%}.eyebrow{font-size:14px;letter-spacing:.02em;color:#92665d;margin:0 0 22px}.intro h1{font-size:34px;font-weight:500;margin:0 0 14px}.ornament{color:#a98676;letter-spacing:5px;font-size:14px;margin:14px auto 20px}.lead{font-size:23px;line-height:1.65;margin:25px 0 34px}.primary{border:0;border-radius:28px;background:var(--rose);color:white;font:inherit;font-size:18px;padding:12px 24px;min-height:48px;cursor:pointer;box-shadow:0 5px 12px #a55c5320;transition:transform .2s,background .2s}.primary span{padding-right:10px;font-family:Arial,sans-serif}.primary:active,.flower-card:active{transform:scale(.97)}.sprig{position:absolute;color:#c88e8b;font-size:26px;letter-spacing:4px;opacity:.7}.sprig-top{top:16px;right:10px;transform:rotate(-18deg)}.sprig-bottom{bottom:22px;left:10px;transform:rotate(12deg)}.selection{padding:34px 20px 18px;display:none;flex-direction:column;align-items:center;background:linear-gradient(#fbf2ea,#f1e2d7)}.selection header{text-align:center;margin-bottom:18px}.selection h2{font-size:23px;font-weight:500;margin:0}.selection .ornament{margin:12px auto 0}.flower-grid{width:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px 10px}.flower-card{padding:0 0 9px;border:1px solid #e5d5c9;border-radius:12px;background:linear-gradient(#fffaf5,#f1e2d7);overflow:hidden;box-shadow:0 4px 9px #5a35200d;color:var(--ink);font:inherit;font-size:16px;cursor:pointer;transition:transform .22s,box-shadow .22s}.flower-card:hover{transform:translateY(-3px);box-shadow:0 8px 17px #5a35201b}.flower-card img{display:block;width:100%;height:clamp(112px,22vh,157px);object-fit:cover}.flower-card span{display:block;padding-top:7px}.back-link{margin-top:auto;align-self:flex-start;border:0;background:none;color:#8f6a5d;font:inherit;font-size:15px;padding:10px 2px;cursor:pointer}.flower-scene,.reveal-scene{align-items:center;justify-content:center;background:#8d453b}.hero-photo{position:absolute;inset:0;background:#9d5548}.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#3e1e1700 30%,#3b1b1640 100%)}.hero-photo img{width:100%;height:100%;object-fit:cover;filter:saturate(.95)}.message-card{position:relative;z-index:1;width:78%;padding:24px 18px 21px;text-align:center;border:1px solid #fff9f0;border-radius:22px;background:var(--card);box-shadow:0 10px 35px #421b1c24;backdrop-filter:blur(8px);animation:card-in .8s .15s both}.message-card p{font-size:19px;line-height:1.6;margin:0 0 7px}.message-card .wrong{font-size:16px;color:#9b6259;margin-bottom:12px}.message-card .ellipsis{margin-top:0}.message-card .ornament{margin:12px auto 15px}.compact{font-size:16px;padding:9px 15px;min-height:42px}.reveal-scene{background:#d6b8a6}.reveal-photo img{object-position:center}.reveal-card{width:78%;padding:28px 20px}.reveal-card p:first-child{font-size:21px}.final-scene{align-items:center;justify-content:center;text-align:center;padding:32px 24px;background:radial-gradient(ellipse at 50% 28%,#fff9f2 0%,#f8e8e2 60%,#efdbd3 100%)}.final-scene:before{content:"";position:absolute;inset:auto -25px -30px -25px;height:35%;background:url('../images/cherry-blossom.jpg') center 42%/cover;opacity:.34;mask-image:linear-gradient(transparent,black 30%)}.final-decor{font-size:45px;margin-bottom:10px;filter:drop-shadow(0 3px 4px #a65c5622)}.final-scene .eyebrow{margin-bottom:12px}.small-line{font-size:17px;margin:0}.final-scene h2{font-size:31px;line-height:1.55;font-weight:500;color:#c92c65;margin:0 0 18px;position:relative}.final-scene h2 em{font-style:normal}.final-greeting{font-size:19px;line-height:1.8;margin:0;position:relative}.heart{font:36px Arial,sans-serif;color:#d72d66;margin-top:12px}.restart{position:absolute;bottom:14px;right:50%;transform:translateX(50%);border:0;background:transparent;color:#92665d;font:inherit;font-size:14px;padding:10px;cursor:pointer}.petal-field{position:absolute;inset:0;pointer-events:none;z-index:2;overflow:hidden}.petal-field i{position:absolute;top:-30px;font-style:normal;color:#e9a0aa;opacity:.55;animation:fall 13s linear infinite}.petal-field i:nth-child(1){left:15%;animation-delay:-2s}.petal-field i:nth-child(2){left:75%;animation-delay:-8s;font-size:15px}.petal-field i:nth-child(3){left:45%;animation-delay:-5s;font-size:12px}.petal-field i:nth-child(4){left:88%;animation-delay:-10s}.petal-field i:nth-child(5){left:58%;animation-delay:-1s;font-size:18px}
-@keyframes scene-in{from{opacity:0}to{opacity:1}}@keyframes card-in{from{opacity:0;transform:translateY(15px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}@keyframes fall{0%{transform:translate3d(0,-20px,0) rotate(0);opacity:0}10%{opacity:.55}100%{transform:translate3d(35px,105svh,0) rotate(300deg);opacity:0}}
-@media(min-width:600px){.app{border-radius:22px;height:min(900px,92svh)}}@media(max-height:700px){.app{min-height:0}.selection{padding-top:22px}.selection header{margin-bottom:12px}.flower-grid{gap:8px}.flower-card img{height:clamp(92px,18vh,125px)}.flower-card{font-size:14px}.final-scene h2{font-size:27px;margin-bottom:10px}.final-decor{font-size:35px;margin-bottom:5px}.lead{margin:18px 0 25px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+/* ---------- فونت‌ها (محلی، بدون وابستگی به اینترنت) ---------- */
+@font-face{font-family:"Vazirmatn";font-weight:400;font-style:normal;font-display:swap;
+  src:url("../fonts/vazirmatn-arabic-400-normal.woff2") format("woff2");
+  unicode-range:U+0600-06FF,U+0750-077F,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE80-FEFC}
+@font-face{font-family:"Vazirmatn";font-weight:500;font-style:normal;font-display:swap;
+  src:url("../fonts/vazirmatn-arabic-500-normal.woff2") format("woff2");
+  unicode-range:U+0600-06FF,U+0750-077F,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE80-FEFC}
+@font-face{font-family:"Vazirmatn";font-weight:400 500;font-style:normal;font-display:swap;
+  src:url("../fonts/vazirmatn-latin-400-normal.woff2") format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Lalezar";font-weight:400;font-style:normal;font-display:swap;
+  src:url("../fonts/lalezar-arabic-400-normal.woff2") format("woff2");
+  unicode-range:U+0600-06FF,U+0750-077F,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE80-FEFC}
 
-/* Reference-faithful corrections: use full-resolution storyboard crops rather than stretching tiny card thumbnails. */
-.flower-scene .hero-photo{display:none}
-.flower-scene{background-position:center;background-size:100% 100%;background-repeat:no-repeat}
-.scene-rose{background-image:url('../images/rose-panel.jpg')}
-.scene-lily{background-image:url('../images/lily-panel.jpg')}
-.scene-lotus{background-image:url('../images/lotus-panel.jpg')}
-.scene-tulip{background-image:url('../images/tulip-panel.jpg')}
-.scene-sunflower{background-image:url('../images/sunflower-panel.jpg')}
-.scene-cherry{background-image:url('../images/cherry-panel.jpg')}
-.flower-scene .message-card{width:76%;padding:22px 16px 18px;background:rgba(255,239,229,.98);border-color:#fff9f0;box-shadow:0 8px 25px #421b1c18;backdrop-filter:none;transform:translateY(5%)}
-.flower-scene .message-card .wrong-answer{font-size:16px;color:#9b6259;margin:0 0 8px;opacity:0;animation:scene-in .45s .2s forwards}
-.flower-scene .message-card .flower-line{opacity:0;animation:scene-in .5s 1.05s forwards}
-.flower-scene .message-card .ellipsis{opacity:0;animation:scene-in .5s 1.7s forwards}
-.flower-scene .message-card .ornament{opacity:0;animation:scene-in .5s 2s forwards}
-.flower-scene .message-card .primary{margin-top:2px}
-.intro .eyebrow{display:none}
-.intro:before{background-image:url('../images/intro-panel.jpg');background-position:left top;background-size:cover}
-.intro:after{background-image:url('../images/intro-panel.jpg');background-position:left bottom;background-size:cover}
-@media(max-width:370px){.selection{padding:24px 14px 12px}.flower-grid{gap:9px 7px}.flower-card img{height:clamp(100px,18vh,135px)}.flower-card{font-size:14px}.selection h2{font-size:21px}.flower-scene .message-card{width:82%;padding:18px 12px 15px}}
-/* Keep each scene at the same portrait ratio as its corresponding reference panel. */
-.app{width:min(100%,430px,65.6svh);height:auto;min-height:0;aspect-ratio:332/506}
+:root{
+  --ink:#2a1a1c;
+  --ink-soft:#4a3638;
+  --rose:#c27e78;
+  --rose-deep:#b06b66;
+  --pink:#d63d7a;
+  --line:#b09081;
+  --cream:#f6ece6;
+  --font:"Vazirmatn","Vazir","IRANSans","Segoe UI",Tahoma,sans-serif;
+}
 
-/* Requested copy and final-scene reading order adjustments. */
-.intro .eyebrow{display:none!important}
-.flower-scene .compact{font-size:16px}
-.final-scene{display:none;flex-direction:column;align-items:center;justify-content:flex-start;gap:0;padding:42px 24px 58px}
-.final-scene.active{display:flex}
-.final-scene .final-decor{position:absolute;top:14px;right:16px;width:34px;height:34px;margin:0;pointer-events:none}
-.final-scene .final-wrong{position:relative;order:1;margin:0 0 16px;flex:none}
-.final-scene .small-line{position:relative;order:2;line-height:1.7;margin:0 0 4px;flex:none}
-.final-scene .ornament{position:relative;order:3;flex:none;margin:12px auto 16px}
-.final-scene h2{position:relative;order:4;flex:none;margin:0 0 18px;line-height:1.45}
-.final-scene .final-greeting{position:relative;order:5;flex:none;line-height:1.75}
-.final-scene .heart{position:relative;order:6;flex:none;margin-top:10px}
-.final-scene .restart{position:absolute;order:7}
-@media(max-height:700px){.final-scene{padding-top:25px}.final-scene .final-wrong{margin-bottom:9px}.final-scene .ornament{margin:7px auto 10px}.final-scene h2{font-size:27px;margin-bottom:10px}.final-scene .heart{margin-top:6px}}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;margin:0}
+body{
+  background:var(--cream);
+  font-family:var(--font);
+  color:var(--ink);
+  display:grid;place-items:center;
+  overflow:hidden;
+  -webkit-text-size-adjust:100%;
+}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.noscript{position:fixed;inset:auto 0 20px;text-align:center}
+
+/* ---------- صحنه: روی موبایل تمام‌صفحه، روی دسکتاپ یک کادر موبایل‌مانند ---------- */
+.stage{
+  position:relative;
+  width:min(100vw,480px);
+  height:100vh;height:100dvh;
+  max-height:940px;
+  overflow:hidden;overflow:clip;
+  container-type:size;
+  background:var(--cream);
+  isolation:isolate;
+}
+@media (min-width:520px) and (min-height:700px){
+  .stage{border-radius:28px;box-shadow:0 24px 70px rgba(120,70,60,.22)}
+}
+
+.screen{
+  position:absolute;inset:0;
+  opacity:0;visibility:hidden;
+  transition:opacity 1.7s ease,visibility 0s linear 1.7s;
+}
+.screen.active{opacity:1;visibility:visible;transition:opacity 1.7s ease,visibility 0s}
+
+/* بوم هم‌نسبت با تصویر مرجع. روی گوشی‌های بلند حداکثر ۱۲٪ از عرض برش می‌خورد
+   و باقی فضا را نسخه‌ی محو همان تصویر (bgfill) پر می‌کند. */
+.bgfill{position:absolute;left:-8%;top:-8%;width:116%;height:116%;object-fit:cover;filter:blur(22px) saturate(1.05)}
+.canvas{
+  position:absolute;left:50%;top:50%;
+  width:max(100cqw,min(calc(100cqh * var(--ar)),122cqw));
+  aspect-ratio:var(--ar);
+  translate:-50% -50%;
+}
+.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.04);will-change:transform;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 3.5%,#000 96.5%,transparent 100%);
+          mask-image:linear-gradient(to bottom,transparent 0,#000 3.5%,#000 96.5%,transparent 100%)}
+.screen.active .bg{animation:settle 18s ease-out forwards}
+@keyframes settle{to{transform:scale(1)}}
+
+/* ---------- متن‌ها و ورود تدریجی ---------- */
+.t{position:absolute;left:50%;width:100cqw;margin:0;text-align:center;translate:-50% -50%}
+.r{opacity:0;transition:opacity 2s ease}
+.r > *{display:inline-block;transform:translateY(2.4cqw);filter:blur(.8cqw);transition:transform 2s cubic-bezier(.2,.7,.2,1),filter 2s ease}
+.r.in{opacity:1}
+.r.in > *{transform:none;filter:none}
+
+.orn{width:30cqw;height:3cqw;overflow:visible;display:block;margin:0 auto}
+.orn line{stroke:var(--line);stroke-width:.7;vector-effect:non-scaling-stroke}
+.orn path{fill:none;stroke:var(--line);stroke-width:.9;vector-effect:non-scaling-stroke}
+
+/* ۱) معرفی */
+.intro-title{font-size:8cqw;font-weight:500;color:var(--ink)}
+.intro-q{font-size:5.4cqw;line-height:1.75;font-weight:400;color:var(--ink)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:2.6cqw;
+  min-width:55cqw;height:11.2cqw;padding:0 6cqw;
+  border:0;border-radius:99cqw;cursor:pointer;
+  font:500 4.7cqw/1 var(--font);color:#fff;
+  background:linear-gradient(180deg,#cb8c85,#bd7570);
+  box-shadow:0 1.6cqw 4.5cqw rgba(176,107,102,.38),inset 0 .3cqw 0 rgba(255,255,255,.28);
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+.btn svg{width:5cqw;height:5cqw;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.btn:hover{transform:translateY(-.6cqw)}
+.btn:active{transform:scale(.97)}
+.btn:focus-visible,.tile:focus-visible{outline:.7cqw solid rgba(176,107,102,.7);outline-offset:.7cqw}
+
+/* ۲) انتخاب گل */
+.choose-title{font-size:5.6cqw;font-weight:400;color:var(--ink)}
+.grid{
+  position:absolute;left:50%;width:94cqw;top:23.8%;translate:-50% 0;
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:2.9cqw 3.4cqw;
+  direction:ltr; /* ترتیب بصری مثل طرح مرجع: رز، لیلیوم، نیلوفر / لاله، آفتابگردان، شکوفه */
+}
+.tile{
+  appearance:none;border:0;cursor:pointer;font:inherit;color:var(--ink-soft);
+  display:flex;flex-direction:column;align-items:center;
+  padding:.9cqw .9cqw 0;
+  border-radius:3.4cqw;
+  background:linear-gradient(180deg,#faf4ef,#f0e5dd);
+  box-shadow:0 .7cqw 2.2cqw rgba(120,80,60,.17),inset 0 0 0 .3cqw rgba(255,255,255,.75);
+  opacity:0;transform:translateY(3cqw) scale(.97);
+  transition:opacity 1.6s ease,transform 1.6s cubic-bezier(.2,.7,.2,1),box-shadow .3s ease;
+}
+.tile.in{opacity:1;transform:none}
+.tile img{display:block;width:100%;aspect-ratio:89/115;object-fit:cover;border-radius:2.6cqw;pointer-events:none}
+.tile span{display:grid;place-items:center;height:8.6cqw;font-size:3.5cqw;font-weight:400;direction:rtl}
+.tile.in:hover{transform:translateY(-.9cqw);box-shadow:0 1.6cqw 3.6cqw rgba(120,80,60,.24),inset 0 0 0 .3cqw rgba(255,255,255,.75)}
+.grid.locked .tile{pointer-events:none}
+.grid.locked .tile:not(.picked){opacity:.35;transform:scale(.97);transition:opacity .5s ease,transform .5s ease}
+.tile.picked{
+  transform:translateY(-1cqw) scale(1.07)!important;
+  box-shadow:0 0 0 .7cqw rgba(201,128,124,.7),0 2.4cqw 5cqw rgba(176,107,102,.35)!important;
+  transition:transform .7s cubic-bezier(.2,.9,.3,1.3),box-shadow .7s ease;
+  z-index:2;
+}
+
+/* ۳ تا ۸) پاسخ اختصاصی هر گل (کارت مات از خود تصویر مرجع می‌آید) */
+.card-line{position:absolute;margin:0;text-align:center;translate:0 -50%}
+.card-line.r > *{white-space:nowrap}
+.l1{font-size:4.9cqw;font-weight:400;color:var(--ink)}
+.l2{font-size:4.9cqw;font-weight:400;color:var(--ink-soft)}
+
+/* ۹) پیام نهایی */
+.f-wrong{font-size:4.4cqw;font-weight:500;color:var(--ink)}
+.f-line{font-size:3.9cqw;font-weight:400;color:var(--ink)}
+.f-but{font-size:4.4cqw;color:var(--ink-soft)}
+.f-head{
+  font-family:"Lalezar","Vazirmatn",sans-serif;font-weight:400;
+  font-size:12cqw;line-height:1.5;
+  color:var(--pink);
+}
+.f-head .w{display:inline-block;opacity:0;transform:translateY(3cqw) scale(.94);filter:blur(1.2cqw);
+  transition:opacity 1.8s ease,transform 1.8s cubic-bezier(.2,.8,.2,1),filter 1.8s ease;margin:0 .7cqw}
+.f-head.in .w{opacity:1;transform:none;filter:none}
+.f-head{text-shadow:0 0 5cqw rgba(255,255,255,.75),0 .4cqw 1.6cqw rgba(214,61,122,.22)}
+.f-greet{font-size:4.9cqw;line-height:1.9;font-weight:500;color:var(--ink)}
+.f-wish{font-size:3.8cqw;color:var(--ink-soft);font-weight:400}
+.f-heart{width:6cqw;height:6cqw;display:block;fill:none;stroke:#e0507f;stroke-width:1.9;stroke-linejoin:round;stroke-linecap:round;animation:beat 3.2s ease-in-out infinite}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.14)}}
+.btn.ghost{min-width:40cqw;height:9.8cqw;padding:0 5cqw;font-size:4.1cqw;color:var(--rose-deep);
+  background:rgba(255,255,255,.78);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  box-shadow:0 1.2cqw 4cqw rgba(176,107,102,.28),inset 0 0 0 .3cqw rgba(255,255,255,.9)}
+
+/* ---------- گلبرگ‌های شناور (فقط transform و opacity) ---------- */
+.petals{position:absolute;inset:0;pointer-events:none;z-index:5;overflow:hidden}
+.petal{
+  position:absolute;top:-6%;left:0;
+  width:var(--s,3.4cqw);height:calc(var(--s,3.4cqw)*1.3);
+  background:radial-gradient(120% 120% at 30% 25%,#ffe3ea 0%,#f6a9bd 55%,#ea86a1 100%);
+  border-radius:80% 8% 80% 30%;
+  opacity:0;
+  animation:fall var(--dur,26s) linear var(--del,0s) infinite;
+  will-change:transform,opacity;
+}
+@keyframes fall{
+  0%{transform:translate3d(0,-6vh,0) rotate(0deg);opacity:0}
+  8%{opacity:.8}
+  50%{transform:translate3d(var(--dx,8cqw),55cqh,0) rotate(200deg)}
+  92%{opacity:.7}
+  100%{transform:translate3d(calc(var(--dx,8cqw)*-.5),112cqh,0) rotate(400deg);opacity:0}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important}
+  .screen,.screen.active,.r,.r > *,.tile,.f-head .w{transition-duration:.01s!important}
+  .r > *{filter:none!important;transform:none!important}
+  .bg{transform:none!important}
+  .petals{display:none}
+}
